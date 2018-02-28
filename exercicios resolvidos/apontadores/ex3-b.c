@@ -3,6 +3,7 @@
 
 int main() 
 {
+   //Allocate memory for array arr1
    int *arr1 = malloc(sizeof(int)*10);
    int i,n, sum = 0;
    int *pt;
@@ -28,5 +29,8 @@ int main()
    }
  
    printf(" The sum of array is : %d\n\n", sum);
+   //Free memory allocated for arr1
+   free(arr1);
+
    return 0;
 }
